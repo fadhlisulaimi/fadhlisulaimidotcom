@@ -1,0 +1,115 @@
+.timeline {
+  list-style: none;
+  position: relative;
+  padding: 200px 0 200px 0;
+  margin: 0; }
+  .timeline::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 22px;
+    width: 4px;
+    margin-top: 200px;
+    background-color: #929292; }
+    @media (min-width: 768px) {
+      .timeline::before {
+        left: 50%; } }
+  .timeline > li {
+    margin-bottom: 150px; }
+    .timeline > li::before, .timeline > li::after {
+      content: " ";
+      display: table; }
+    .timeline > li .timeline-panel {
+      position: relative;
+      width: 100%;
+      padding: 0 20px 0 50px;
+      text-align: left;
+      color: #FFF;
+      font-size: 90%; }
+      @media (min-width: 768px) {
+        .timeline > li .timeline-panel {
+          width: 70%;
+          padding: 0 160px 0 0px;
+          text-align: left;
+          font-size: 100%; } }
+      @media (min-width: 992px) {
+        .timeline > li .timeline-panel {
+          width: 60%;
+          padding: 0 140px 0 0px;
+          text-align: left; } }
+      @media (min-width: 1200px) {
+        .timeline > li .timeline-panel {
+          width: 60%;
+          padding: 0 190px 0 0px;
+          text-align: left; } }
+    .timeline > li .timeline-circle, .timeline > li .timeline-circle-red {
+      z-index: 1;
+      position: absolute;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      margin-left: 0;
+      border: 3px solid #f1f1f1;
+      border-radius: 100%;
+      text-align: center;
+      color: #fff;
+      transition: 1s all ease;
+      opacity: 0;
+      transform: translateY(-600px); }
+    .timeline > li .enterView {
+      opacity: 1;
+      transform: translateY(0px); }
+    .timeline > li .timeline-circle:hover, .timeline > li .timeline-circle-red:hover {
+      margin-top: -60px;
+      cursor: pointer;
+      transition: 1s all ease; }
+    .timeline > li .timeline-circle {
+      background-color: #1ee2e7; }
+      @media (min-width: 768px) {
+        .timeline > li .timeline-circle {
+          left: 47%;
+          border: 7px solid #f1f1f1; } }
+      @media (min-width: 992px) {
+        .timeline > li .timeline-circle {
+          left: 45%;
+          width: 100px;
+          height: 100px; } }
+      @media (min-width: 1200px) {
+        .timeline > li .timeline-circle {
+          left: 43%;
+          width: 150px;
+          height: 150px; } }
+    .timeline > li .timeline-circle-red {
+      background-color: #f28d82; }
+      @media (min-width: 768px) {
+        .timeline > li .timeline-circle-red {
+          left: 47%;
+          border: 7px solid #f1f1f1; } }
+      @media (min-width: 992px) {
+        .timeline > li .timeline-circle-red {
+          left: 45%;
+          width: 100px;
+          height: 100px; } }
+      @media (min-width: 1200px) {
+        .timeline > li .timeline-circle-red {
+          left: 43%;
+          width: 150px;
+          height: 150px; } }
+  .timeline > li.timeline-right > .timeline-panel {
+    float: right;
+    padding: 0 20px 0 50px;
+    text-align: left;
+    font-size: 90%; }
+    @media (min-width: 768px) {
+      .timeline > li.timeline-right > .timeline-panel {
+        padding: 0 0px 0 180px;
+        font-size: 100%; } }
+    @media (min-width: 992px) {
+      .timeline > li.timeline-right > .timeline-panel {
+        padding: 0 0px 0 160px; } }
+    @media (min-width: 1200px) {
+      .timeline > li.timeline-right > .timeline-panel {
+        padding: 0 0px 0 200px; } }
+
+/*# sourceMappingURL=timeline.css.map */
